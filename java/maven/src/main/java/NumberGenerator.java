@@ -1,9 +1,12 @@
 import static java.lang.Math.random;
 
 public class NumberGenerator {
+
+    public static final int NUMBER_LENGTH = 4;
+
     public String generate() {
         String result = "";
-        while (result.length() < 4) {
+        while (result.length() < NUMBER_LENGTH) {
             String random = randomDigit();
             if (! result.contains(random)){
                 result = result.concat(random);
